@@ -2,4 +2,5 @@
     <string name="app_name">Smart Control</string>
     <string name="sample_degree_76">76</string>
     <string name="degree_symbol">F</string>
+    <string name="stop">STOP</string>
 </resources>
