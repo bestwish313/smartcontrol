@@ -178,24 +178,25 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HEAT"
+        android:text="@string/heat"
+        android:src="@drawable/heat"
         android:id="@+id/button"
-        android:src="@drawable/cooling"
         android:layout_gravity="bottom|center_horizontal"
         android:textColor="#ffffff"
         android:textSize="15dp"
         android:background="@android:color/transparent"
         android:clickable="true"
         android:gravity="bottom|center_horizontal"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true" />
+        android:layout_above="@+id/textView9"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false" />
 
-    <Button
+    <ImageButton
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="COOL"
+        android:src="@drawable/cool"
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
         android:textColor="#ffffff"
@@ -203,59 +204,121 @@
         android:layout_alignParentEnd="false"
         android:gravity="bottom|center_horizontal"
         android:background="@android:color/transparent"
-        android:layout_toStartOf="@+id/button3"
-        android:layout_toEndOf="@id/button" />
+        android:layout_alignTop="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignRight="@+id/button3"/>
 
-    <Button
+    <ImageButton
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FAN"
+        android:src="@drawable/fan"
         android:id="@+id/button3"
         android:layout_alignParentBottom="true"
         android:background="@android:color/transparent"
         android:gravity="bottom|center_horizontal"
         android:textColor="#ffffff"
         android:textSize="15dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/button" />
 
-    <Button
+    <ImageButton
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AUTO"
+        android:src="@drawable/heat"
         android:id="@+id/button4"
         android:layout_alignParentBottom="true"
         android:background="@android:color/transparent"
+        android:gravity="bottom|center_horizontal"
         android:textColor="#ffffff"
         android:textSize="15dp"
-        android:gravity="bottom|center_horizontal"
-        android:layout_toEndOf="@id/button3"
-        android:layout_alignParentStart="false"
-        android:layout_toStartOf="@+id/button5" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button5" />
 
-    <Button
+    <ImageButton
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="STOP"
+        android:src="@drawable/heat"
         android:id="@+id/button5"
         android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:gravity="bottom|center_horizontal"
         android:textColor="#ffffff"
         android:textSize="15dp"
-        android:gravity="bottom|center_horizontal"
-        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/button"
         android:layout_alignParentEnd="true" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="HEAT"
+        android:id="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:gravity="bottom|center_horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="false"
-        android:background="#898989"
-        android:clickable="true">
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignRight="@+id/button" />
 
-    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="COOL"
+        android:id="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FAN"
+        android:id="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="AUTO"
+        android:id="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignRight="@+id/button4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="STOP"
+        android:id="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignRight="@+id/button5" />
 
 </RelativeLayout>
