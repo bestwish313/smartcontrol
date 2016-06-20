@@ -9,6 +9,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     ImageView weatherImage;
+    private Gauge gauge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +25,13 @@ public class MainActivity extends AppCompatActivity {
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Heating   Cooling   Fan  Stop", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Sample Action Trigger", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
+
+        gauge = (Gauge) findViewById(R.id.gauge1);
+        gauge.setValue(70);
     }
 
     public ImageView getWeatherImage() {
